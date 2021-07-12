@@ -34,10 +34,18 @@
     <form id='movie-form'>
         <h2>Add a new Movie:</h2>
         Title:
-        <input type='text'> <br>
+        <input type='text' minlength='2'> <br>
         Rating/10:
         <input type='number' min='0' max='10'>
         <input type='submit'>
+    </form>
+    <form id='sort-form'>
+        <h3>Sort By</h3>
+        <label for='title-sort'>Title</label>
+        <input type='radio' name='sortType' id='title-sort' checked>
+        <label for='rating-sort'>Rating</label>
+        <input type='radio' name='sortType' id='rating-sort'>
+        <input type='submit' value='Go!'>
     </form>
     <div id='movie-container'>
     </div>
